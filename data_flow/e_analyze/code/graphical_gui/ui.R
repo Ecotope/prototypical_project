@@ -20,7 +20,11 @@ shinyUI(fluidPage(
                          choices = list("OAT"="OAT","living.room"="Living.Room")),
       checkboxGroupInput("PowerVars", label = h3("Power Variables"), 
                          choices = list("DHP" = "DHP"),
-                         selected = c("DHP"))
+                         selected = c("DHP")),
+      tags$head(
+        tags$style("body {background-color: black; }")
+      )
+      
       
       
     ),
